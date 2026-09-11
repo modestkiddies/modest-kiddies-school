@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Modest Kiddies Nursery & Primary School</title>
+    <meta name="description" content="Get in touch with Modest Kiddies Nursery & Primary School in Lagos — admissions enquiries, visits and general questions.">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Modest Kiddies Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/150x150/1e3a8a/eab308?text=MK'">
+                <div class="logo-text">
+                    <h1>MODEST KIDDIES</h1>
+                    <p>NURSERY &amp; PRIMARY SCHOOL</p>
+                </div>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="academics.html" class="nav-link">Academics</a>
+                <a href="activities.html" class="nav-link">Activities</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="admissions.html" class="nav-cta">Enroll Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="bg-navy" style="padding-top:170px;">
+            <div class="container">
+                <div class="grid grid-2" style="gap:50px; align-items:start;">
+                    <div class="reveal">
+                        <span class="eyebrow">Get In Touch</span>
+                        <h1 style="color:white;">We'd Love to Hear From You</h1>
+                        <p style="color:#cdd6f4; margin-bottom:36px;">Whether it's an admissions enquiry or a general question, our team replies within 48 hours.</p>
+
+                        <div class="contact-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div><h4>Email</h4><a href="mailto:modestsch2022@gmail.com">modestsch2022@gmail.com</a></div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <div><h4>Phone</h4><a href="tel:+2348031234567">+234 803 123 4567</a></div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div><h4>Location</h4><p>Lagos, Nigeria</p></div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fa-solid fa-clock"></i>
+                            <div><h4>School Hours</h4><p>Monday – Friday, 7:30 AM – 3:00 PM</p></div>
+                        </div>
+
+                        <div class="social-links" style="margin-top:10px;">
+                            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://whatsapp.com" target="_blank" rel="noopener" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!--
+                        FORM SETUP: this form posts to Formspree (free).
+                        1. Create a free account at https://formspree.io
+                        2. Create a form and copy its endpoint, e.g. https://formspree.io/f/abcd1234
+                        3. Replace YOUR_FORM_ID in the action attribute below.
+                        Until then, the form still validates and shows a friendly message.
+                    -->
+                    <div style="background:white; border-radius:var(--radius); padding:40px; box-shadow:var(--shadow-lift);" class="reveal">
+                        <h2 style="font-size:1.6rem; margin-bottom:24px;">Send a Message</h2>
+                        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required rows="5" class="form-control" placeholder="Leave a message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center;">Send Message</button>
+                            <div id="formStatus" class="form-status" role="status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Modest Kiddies Nursery &amp; Primary School</h3>
+                <p>Training the Leaders of Tomorrow</p>
+                <p style="margin-top:14px;"><i class="fa-solid fa-envelope" style="color:var(--gold); margin-right:8px;"></i><a href="mailto:modestsch2022@gmail.com">modestsch2022@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone" style="color:var(--gold); margin-right:8px;"></i><a href="tel:+2348031234567">+234 803 123 4567</a></p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="graduation.html">Graduation</a>
+            </div>
+            <div class="footer-col">
+                <h3>School Hours</h3>
+                <p>Monday – Friday</p>
+                <p>7:30 AM – 3:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© <span id="year">2026</span> Modest Kiddies Nursery &amp; Primary School. All Rights Reserved.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
